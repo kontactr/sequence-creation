@@ -1,6 +1,6 @@
 let seqence =
   "ABCDEFGHIJKLMNOPQRSTVWXYZabcdefghijklmnopqrstuvwxyz`!@#$%^&*()_+-";
-seqence = "AB!";
+//seqence = "AB!";
 let regExReplace = /[a-z|A-Z|\W]/g;
 let allChars = {},
   index = 0;
@@ -45,7 +45,7 @@ function generateSequence(StartIndex = 1) {
 }
 
 let [start, nextGen] = generateSequence(2);
-console.log(start, allChars, "L");
-for (let t = 0; t < 10; t++) {
+console.log(start, 0);
+for (let t = 1; t <= 10; t++) {
   console.log(nextGen(), t);
 }
